@@ -1,0 +1,21 @@
+@import "tailwindcss";
+/* @import "./base.css"; */
+@import "./components.css";
+@import "./utilities.css";
+@import "./layout.css";
+
+
+@theme {
+
+    /* color */
+    --color-primary: '#FF3B30';
+    --color-primary-hover: '#D32F2F';
+    --color-dark: '#0A0A0A';
+    --color-dark-secondary: '#121212';
+    --color-dark-tertiary: '#1A1A1A';
+
+    /* font-family */
+    --font-heading: "Barlow Condensed", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+}
