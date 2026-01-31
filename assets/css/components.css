@@ -7,3 +7,6 @@
 .title span{
     @apply text-gray-500;
 }
+.red-dot{
+    @apply  w-2 h-2 bg-primary rounded-full;
+}

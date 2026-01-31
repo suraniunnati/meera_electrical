@@ -47,3 +47,23 @@ contactForm.addEventListener('submit', async (e) => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) { e.preventDefault(); document.querySelector(this.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' }); });
 });
+
+
+// about-page
+//   JavaScript Animation
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeUp");
+            entry.target.classList.remove("opacity-0");
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    document.querySelectorAll(".scroll-animate").forEach(el => {
+      observer.observe(el);
+    });
