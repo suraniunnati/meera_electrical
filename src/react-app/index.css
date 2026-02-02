@@ -13,6 +13,9 @@
 }
 
 @layer utilities {
+  nav .logo img{
+    /* filter: drop-shadow(0 0 0.99rem rgba(233, 224, 224, 0.638)); */
+  }
    /* Scroll-triggered animations */
   .scroll-fade-in {
     opacity: 0;

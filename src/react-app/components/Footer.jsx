@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Logo from '../../assets/logo.png';
 
 export default function Footer() {
   return (
@@ -8,9 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Zap className="w-8 h-8 text-red-600" />
-              <span className="text-xl font-bold text-white">Meera Electrical</span>
+            <div className="flex items-center">
+                <img src={Logo} alt="Logo" className="h-[120px] w-auto" />
             </div>
             <p className="text-gray-400 text-sm">
               Your trusted partner for quality electrical machines and industrial solutions.
@@ -61,15 +61,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2 text-gray-400 text-sm">
                 <MapPin className="w-4 h-4 mt-0.5 text-red-600 flex-shrink-0" />
-                <span>123 Industrial Area, City, State</span>
+                <span>14-Samrat industries Area, Behind ST Work Shop, Gondal Road, Rajkot-36005.</span>
               </li>
               <li className="flex items-center space-x-2 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-red-600 flex-shrink-0" />
-                <span>+91 98765 43210</span>
+                <div className='flex flex-col'>
+                  <a href="tel:+917016330743">+91 70163 30743,</a>
+                  <a href="tel:+919227029693">+91 92270 29693</a>
+                </div>
+
               </li>
               <li className="flex items-center space-x-2 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-red-600 flex-shrink-0" />
-                <span>info@meeraelectrical.com</span>
+                <a href="meeraelectricalandservicellp@gmail.com">meeraelectricalandservicellp@gmail.com</a>
               </li>
             </ul>
           </div>

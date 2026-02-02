@@ -1,21 +1,20 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Zap } from 'lucide-react';
+import Logo from '../../assets/logo.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-md border-b border-red-900/30 animate-slide-up">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-red-900/30 animate-slide-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <Zap className="w-8 h-8 text-red-600 group-hover:text-red-500 transition-colors" />
-              <div className="absolute inset-0 bg-red-600/20 blur-xl group-hover:bg-red-600/40 transition-all" />
-            </div>
-            <span className="text-xl font-bold text-white">Meera Electrical</span>
+            <div className="relative logo">
+              <img src={Logo} alt="Logo" className="h-[120px] w-auto" />
+              </div>
           </Link>
 
           {/* Desktop Navigation */}
