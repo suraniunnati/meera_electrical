@@ -1,3 +1,11 @@
+import jawcrusher from "../assets/Jaw-crusher.jpeg"
+import VibratingMachine from "../assets/Vibrating-MACHINE.jpeg"
+import BriquettingMachine from "../assets/Briquetting-machine.jpeg"
+import mobilecurshing from "../assets/mobile-curshing.jpeg"
+import ColorInlinePrinting from "../assets/8Color-inline -printing-machine.jpeg"
+import AutomaticDieCuttingMachine from "../assets/Automatic-Die-Cutting-Machine.jpeg"
+import SlittingAndRewindingMachine from "../assets/Slitting-and-Rewinding-Machine.jpeg"
+import CrawlerMobileCrushingStation from "../assets/Crawler-Mobile-Crushing-Station.jpeg"
 
 export const products = [
  {
@@ -5,7 +13,7 @@ export const products = [
   name: "Jaw Crusher (500 × 750)",
   category: "Crushing Machines",
   description: "Heavy-duty jaw crusher designed for primary crushing of stone, rock, and ore in mining, quarrying, and construction applications.",
-  image: "automatic-slitting-rewinding-machine-industrial.jpg",
+  image: jawcrusher,
   specifications: [
     "Feed Opening: 500 × 750 mm",
     "Max Feeding Size: 425 mm",
@@ -21,7 +29,7 @@ export const products = [
   name: "Vibrating Screen Machine (2YK1848)",
   category: "Screening Machines",
   description: "High-performance vibrating screen machine designed for efficient screening and separation of materials in mining, quarrying, and aggregate processing plants.",
-  image: "vibrating-screen-machine-2yk1848.jpg",
+  image: VibratingMachine,
   specifications: [
     "Model: 2YK1848",
     "Screen Layers: 2",
@@ -38,7 +46,7 @@ export const products = [
   name: "Briquetting Machine",
   category: "Briquetting Machines",
   description: "High-capacity briquetting machine designed for compressing powder and fine materials into solid briquettes for fuel, metallurgy, and industrial applications.",
-  image: "briquetting-machine-industrial.jpg",
+  image: BriquettingMachine,
   specifications: [
     "Capacity: 18–20 TPH",
     "Pressing Roll Diameter: 750 mm",
@@ -56,7 +64,7 @@ export const products = [
   name: "Mobile Crushing Plant",
   category: "Mobile Crushing Machines",
   description: "Flexible and efficient mobile crushing plant designed for on-site crushing of stone, rock, and construction waste, offering easy transportation and quick setup.",
-  image: "mobile-crushing-plant-industrial.jpg",
+  image: mobilecurshing,
   specifications: [
     "Type: Mobile Crushing Plant",
     "Mobility: Wheel / Track Mounted",
@@ -73,7 +81,7 @@ export const products = [
   name: "8 Color Inline Printing Machine",
   category: "Printing Machines",
   description: "High-speed 8 color inline printing machine designed for precise and continuous printing on paper materials, delivering excellent color registration, stable performance, and high production efficiency.",
-  image: "8-color-inline-printing-machine.jpg",
+  image: ColorInlinePrinting,
   specifications: [
     "Printing Colors: 8 Color",
     "Max Machine Speed: 150 m/min",
@@ -97,7 +105,7 @@ export const products = [
   name: "Automatic Die Cutting Machine",
   category: "Cutting Machines",
   description: "High-precision automatic die cutting machine designed for accurate and high-speed cutting of labels, paper, and packaging materials with stable performance and easy operation.",
-  image: "automatic-die-cutting-machine.jpg",
+  image: AutomaticDieCuttingMachine,
   specifications: [
     "Cutting Speed: 10–300 times/min",
     "Max Unwinding Diameter: 650 mm",
@@ -117,7 +125,7 @@ export const products = [
   name: "Slitting and Rewinding Machine",
   category: "Slitting Machines",
   description: "Compact and efficient slitting and rewinding machine designed for precise cutting of paper, film, and flexible materials with stable operation and high accuracy.",
-  image: "slitting-rewinding-machine-industrial.jpg",
+  image: SlittingAndRewindingMachine,
   specifications: [
     "Cutting Speed: 5–120 m/min",
     "Max Web Width: 450 mm",
@@ -137,7 +145,7 @@ export const products = [
   name: "Crawler Mobile Crushing Station",
   category: "Mobile Crushing Machines",
   description: "High-efficiency crawler mobile crushing station designed for on-site crushing operations. Equipped with a self-propelled crawler system, it delivers excellent mobility, strong power output, and stable performance across complex terrains.",
-  image: "crawler-mobile-crushing-station.jpg",
+  image: CrawlerMobileCrushingStation,
   specifications: [
     "Feeder Bucket Capacity: 3 m³",
     "Max Feeding Size: 600 mm",
@@ -157,4 +165,9 @@ export const products = [
 
 ];
 
-export const categories = Array.from(new Set(products.map(p => p.category)));
+export const categories = [
+  ...new Set(products.map(p => p.category)),
+];
+
+export default products;
+

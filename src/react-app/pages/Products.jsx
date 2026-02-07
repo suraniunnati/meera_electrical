@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Search, Filter } from 'lucide-react';
-import ProductCard from '../components/ProductCard';
+import ProductCard from './ProductCard';
 import ScrollAnimatedSection from '../components/ScrollAnimatedSection';
 import { products, categories } from '../../data/products';
 
