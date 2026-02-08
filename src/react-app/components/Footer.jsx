@@ -79,8 +79,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-red-900/30 mt-8 pt-8 text-center text-gray-400 text-sm">
+        <div className="border-t border-red-900/30 mt-8 pt-8 text-center text-gray-400 text-sm flex justify-between items-center">
           <p>&copy; {new Date().getFullYear()} Meera Electrical. All rights reserved.</p>
+           <p> Website Maintained by Unnati Surani</p>
         </div>
       </div>
     </footer>
