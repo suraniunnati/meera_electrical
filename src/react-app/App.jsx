@@ -6,10 +6,12 @@ import Products from './pages/Products';
 import SingleProduct from "./pages/SingleProduct";
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ElectricalLoader from "./components/Loader";
 
 export default function App() {
   return (
     <Router>
+      <ElectricalLoader />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow pt-16">
@@ -24,5 +26,6 @@ export default function App() {
         <Footer />
       </div>
     </Router>
+     
   );
 }

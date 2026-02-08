@@ -29,8 +29,8 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-red-600" />
               </div>
               <h3 className="text-white font-bold mb-2">Phone</h3>
-              <p className="text-gray-400">+91 98765 43210</p>
-              <p className="text-gray-400">+91 98765 43211</p>
+              <a href="tel:+917016330743" className="text-gray-400">+91 70163 30743</a><br />
+              <a href="tel:+919227029693" className="text-gray-400">+91 92270 29693</a>
             </div>
 
             {/* Email */}
@@ -39,8 +39,8 @@ export default function Contact() {
                 <Mail className="w-6 h-6 text-red-600" />
               </div>
               <h3 className="text-white font-bold mb-2">Email</h3>
-              <p className="text-gray-400">info@meeraelectrical.com</p>
-              <p className="text-gray-400">sales@meeraelectrical.com</p>
+              <a href="mailto:meeraelectricalandservicellp@gmail.com" className="text-gray-400">meeraelectricalandservicellp@gmail.com</a><br />
+              <a href="mailto:msspinning2022@gmail.com" className="text-gray-400">msspinning2022@gmail.com</a>
             </div>
 
             {/* Address */}
@@ -50,9 +50,7 @@ export default function Contact() {
               </div>
               <h3 className="text-white font-bold mb-2">Address</h3>
               <p className="text-gray-400">
-                123 Industrial Estate,<br />
-                Sector 5, Mumbai,<br />
-                Maharashtra 400001
+                14-Samrat industries Area, Behind ST Work Shop, Gondal Road, Rajkot-36005.
               </p>
             </div>
           </ScrollAnimatedSection>
@@ -112,16 +110,16 @@ export default function Contact() {
 
         {/* Map */}
         <ScrollAnimatedSection animation="scroll-fade-in">
-          <div className="h-96 bg-gradient-to-br from-gray-900 to-black border border-red-900/30 rounded-xl flex items-center justify-center">
-            <div className="text-center">
+          <div className="h-96 bg-gradient-to-br from-gray-900 to-black border border-red-900/30 rounded-xl flex items-center justify-center relative overflow-hidden">
+            {/* <div className="text-center z-30">
               <MapPin className="w-16 h-16 text-red-600 mx-auto mb-4" />
               <h3 className="text-white text-xl font-bold mb-2">
                 Visit Our Showroom
               </h3>
-              <p className="text-gray-400">
-                123 Industrial Estate, Sector 5, Mumbai
-              </p>
-            </div>
+              </div> */}
+              
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14769.86926695801!2d70.799046!3d22.260281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb7f4441ea31%3A0x5859fab9f4414805!2sMS%20Spinning%20Services!5e0!3m2!1sen!2sin!4v1770537586535!5m2!1sen!2sin"
+                className="absolute top-0 -left-60 w-full h-full scale-150"></iframe>
           </div>
         </ScrollAnimatedSection>
 

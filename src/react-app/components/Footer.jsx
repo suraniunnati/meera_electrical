@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center">
-                <img src={Logo} alt="Logo" className="h-[120px] w-auto" />
+                <img src={Logo} alt="Logo" className="h-[100px] w-auto" />
             </div>
             <p className="text-gray-400 text-sm">
               Your trusted partner for quality electrical machines and industrial solutions.

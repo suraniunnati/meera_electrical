@@ -19,13 +19,17 @@ export default function SingleProduct() {
         <ArrowLeft size={18} /> Back
       </Link>
 
-      <img
+    <div className="flex justify-center items-center flex-wrap gap-8 w-full py-10">
+     <div className="w-4/12 flex justify-center items-center h-full">
+         <img
         src={product.image}
         alt={product.name}
         className="w-full max-w-xl rounded-xl border border-red-900/40 mb-6"
       />
+     </div>
 
-      <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+    <div className="w-6/12">
+        <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
       <p className="text-gray-400 mb-6">{product.description}</p>
 
       <div className="space-y-3">
@@ -36,6 +40,8 @@ export default function SingleProduct() {
           </div>
         ))}
       </div>
+    </div>
+    </div>
     </div>
   );
 }

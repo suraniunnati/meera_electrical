@@ -6,7 +6,7 @@ import { products } from '../../data/products';
 import bgimg from '../../assets/banner.jpg'
 
 export default function Home() {
-    const featuredProducts = products.filter(p => p.featured).slice(0, 3);
+  const featuredProducts = products.filter(p => p.featured).slice(0, 3);
 
   return (
     <div className="min-h-screen bg-black">
@@ -15,7 +15,7 @@ export default function Home() {
         {/* Background Effects */}
         <div className="absolute inset-0">
           <div className='absolute top-0 left-0 w-full h-full opacity-30'>
-            <img src={bgimg} alt="" className='bg-cover bg-center h-full w-full'/>
+            <img src={bgimg} alt="" className='bg-cover bg-center h-full w-full' />
           </div>
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-red-600/20 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-red-800/20 rounded-full blur-3xl animate-pulse delay-1000" />
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-red-600/10 border border-red-600/30 rounded-full text-red-500 text-sm font-semibold mb-8 animate-fade-in">
             <Zap className="w-4 h-4" />
-            <span>Powering Industry Since</span>
+            <span>Engineered to Power Industry</span>
           </div>
 
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 animate-slide-up">
@@ -77,7 +77,7 @@ export default function Home() {
               { icon: Truck, title: 'Fast Delivery', desc: 'Nationwide shipping' },
               { icon: Zap, title: 'Trusted Brand', desc: '25+ years experience' }
             ].map((feature, index) => (
-               <ScrollAnimatedSection key={index} animation="scroll-scale-in" delay={index * 100}>
+              <ScrollAnimatedSection key={index} animation="scroll-scale-in" delay={index * 100}>
                 <div className="group text-center p-6 bg-gradient-to-br from-gray-900 to-black border border-red-900/30 rounded-xl hover:border-red-600/50 transition-all hover:shadow-lg hover:shadow-red-900/30 hover:-translate-y-2">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-red-600/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
                     <feature.icon className="w-8 h-8 text-red-600" />
@@ -104,11 +104,15 @@ export default function Home() {
                 Your Trusted Partner in <span className="text-red-600">Electrical Solutions</span>
               </h2>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Since 1995, Meera Electrical has been at the forefront of providing premium electrical machines and equipment to industries across the nation. Our commitment to quality, innovation, and customer satisfaction has made us a leader in the electrical supply industry.
-              </p>
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                We specialize in industrial-grade electrical equipment, from motors and generators to transformers and control panels. Every product we offer meets the highest standards of safety and performance.
-              </p>
+                Merra Electrical Machines is a trusted name in electrical and spinning machinery solutions in India.
+                Founded by Mr. Meru Dholakiya, the company is built on strong technical expertise and industry experience.
+                We specialize in reliable installation, maintenance, and service support for industrial machinery.
+                 </p>
+                <p className="text-gray-400 mb-6 leading-relaxed">Our solutions are designed to ensure efficiency, safety, and long-term performance.
+                With a skilled team of engineers and technicians, we focus on minimizing downtime.
+                We are committed to quality, reliability, and customer satisfaction.
+                Powering industries with dependable engineering solutions.</p>
+             
               <Link
                 to="/about"
                 className="inline-flex items-center space-x-2 px-6 py-3 bg-red-600/10 border border-red-600/30 text-red-500 rounded-lg hover:bg-red-600 hover:text-white transition-all group"
@@ -116,7 +120,7 @@ export default function Home() {
                 <span className="font-semibold">Learn More About Us</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-             </ScrollAnimatedSection>
+            </ScrollAnimatedSection>
             <ScrollAnimatedSection animation="scroll-slide-left" className="order-1 lg:order-2 relative">
               <div className="absolute inset-0 bg-gradient-to-br from-red-600/20 to-transparent rounded-2xl blur-3xl" />
               <div className="relative bg-gradient-to-br from-gray-900 to-black border border-red-900/30 rounded-2xl p-8">
@@ -134,7 +138,7 @@ export default function Home() {
                   ))}
                 </div>
               </div>
-              </ScrollAnimatedSection>
+            </ScrollAnimatedSection>
           </div>
         </div>
       </section>
@@ -142,14 +146,14 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
+          <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               Why Choose <span className="text-red-600">Meera Electrical</span>
             </h2>
-           <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-400 max-w-2xl mx-auto">
               We go beyond just supplying equipment - we deliver complete electrical solutions
             </p>
-                </ScrollAnimatedSection>
+          </ScrollAnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
@@ -216,7 +220,7 @@ export default function Home() {
             ))}
           </div>
 
-           <ScrollAnimatedSection animation="scroll-fade-in" delay={400} className="text-center mt-12">
+          <ScrollAnimatedSection animation="scroll-fade-in" delay={400} className="text-center mt-12">
             <Link
               to="/products"
               className="inline-flex items-center space-x-2 px-8 py-4 bg-red-600/10 border border-red-600/30 text-red-500 rounded-lg hover:bg-red-600 hover:text-white transition-all group"
@@ -231,7 +235,7 @@ export default function Home() {
       {/* Industries We Serve */}
       <section className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-         <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
+          <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               Industries We <span className="text-red-600">Serve</span>
             </h2>
@@ -267,7 +271,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-red-900/20 via-black to-black border-y border-red-900/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-           <ScrollAnimatedSection animation="scroll-slide-up">
+          <ScrollAnimatedSection animation="scroll-slide-up">
             <h2 className="text-4xl font-bold text-white mb-6">
               Ready to Power Your Project?
             </h2>

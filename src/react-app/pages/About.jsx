@@ -16,7 +16,7 @@ export default function About() {
               About <span className="text-red-600">Meera Electrical</span>
             </h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto animate-slide-up delay-200">
-              Leading the way in electrical solutions since 1995
+            Delivering Trusted Electrical Solutions
             </p>
           </div>
 
@@ -28,7 +28,7 @@ export default function About() {
               { number: '500+', label: 'Products' },
               { number: '100%', label: 'Quality Assured' }
             ].map((stat, index) => (
-               <ScrollAnimatedSection key={index} animation="scroll-scale-in" delay={index * 100}>
+              <ScrollAnimatedSection key={index} animation="scroll-scale-in" delay={index * 100}>
                 <div className="text-center p-6 bg-gradient-to-br from-gray-900 to-black border border-red-900/30 rounded-xl hover:border-red-600/50 hover:-translate-y-1 transition-all duration-300">
                   <div className="text-4xl font-bold text-red-600 mb-2">{stat.number}</div>
                   <div className="text-gray-400 text-sm">{stat.label}</div>
@@ -49,13 +49,15 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-gray-400">
                 <p>
-                  Founded in 1995, Meera Electrical has grown from a small local distributor to one of the most trusted names in industrial electrical equipment across the nation.
-                </p>
+                  <b>Merra Electrical Machines</b> is a trusted and growing service provider in India, delivering reliable electrical and industrial machinery solutions.</p>
+
                 <p>
-                  Our commitment to quality, reliability, and customer service has remained unwavering throughout our journey. We partner with leading manufacturers worldwide to bring you the best electrical machines and solutions.
+                  We specialize in comprehensive services for electrical and spinning machinery, focusing on quality, efficiency, and long-term performance. Our expertise spans a wide range of machinery models and brands, ensuring dependable support tailored to our clients’ operational needs. We consistently maintain high standards of workmanship, safety, and reliability.
                 </p>
-                <p>
-                  Today, we serve thousands of clients across various industries, from manufacturing plants to commercial establishments, delivering excellence in every project.
+
+                <p> Founded by <b>Mr. Meru Dholakiya</b>, Merra Electrical Machines is built on a strong foundation of technical expertise and industry experience. With over a decade of hands-on experience in electrical and spinning machinery, our founder’s vision is to provide dependable, high-quality service solutions that support continuous industrial operations.</p>
+
+                <p>Backed by a skilled and dedicated team of engineers and technicians, we deliver prompt and professional services aimed at minimizing downtime and maximizing machine efficiency. Our commitment to customer satisfaction, technical excellence, and long-term partnerships drives us to deliver solutions industries can trust.
                 </p>
               </div>
             </ScrollAnimatedSection>
@@ -63,11 +65,11 @@ export default function About() {
             <ScrollAnimatedSection animation="scroll-slide-left" className="relative">
               <div className="absolute -inset-4 bg-red-600/20 rounded-2xl blur-xl" />
               <img
-                src="https://images.unsplash.com/photo-1581092918484-8313e1b2e0b7?w=800&q=80"
+                src="https://www.industrialautomationco.com/cdn/shop/articles/lights_out_manufacturing_1280x.png?v=1756403066"
                 alt="Electrical Equipment"
                 className="relative rounded-2xl shadow-2xl border border-red-900/30 hover:scale-105 transition-transform duration-500"
               />
-           </ScrollAnimatedSection>
+            </ScrollAnimatedSection>
           </div>
         </div>
       </section>
@@ -75,7 +77,7 @@ export default function About() {
       {/* Values Section */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
+          <ScrollAnimatedSection animation="scroll-slide-up" className="text-center mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">
               Our <span className="text-red-600">Values</span>
             </h2>
