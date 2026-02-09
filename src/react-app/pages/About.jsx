@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="min-h-screen bg-black">
       {/* Hero Section */}
-      <section className="relative py-20 overflow-hidden">
+      <section className="relative md:py-20 pb-0 pt-20 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-red-600/10 rounded-full blur-3xl" />
         </div>
@@ -40,9 +40,9 @@ export default function About() {
       </section>
 
       {/* Story Section */}
-      <section className="py-20 bg-gradient-to-b from-black to-gray-900">
+      <section className="md:py-20 pt-0 pb-20  bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2  gap-12 items-center">
             <ScrollAnimatedSection animation="scroll-slide-right">
               <h2 className="text-4xl font-bold text-white mb-6">
                 Our <span className="text-red-600">Story</span>
