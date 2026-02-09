@@ -65,34 +65,36 @@ export default function Contact() {
                 Send us a Message
               </h2>
 
-              <form className="space-y-6">
+              <form className="space-y-6"
+                action="https://formspree.io/f/xkovgqnn"
+                method="POST">
                 <div className="grid md:grid-cols-2 gap-6">
                   <input
-                    type="text"
+                    type="text" name="name"
                     placeholder="Your name"
                     className="w-full px-4 py-3 bg-black border border-red-900/30 rounded-lg text-white"
                   />
                   <input
-                    type="email"
+                    type="email" name="email"
                     placeholder="your@email.com"
                     className="w-full px-4 py-3 bg-black border border-red-900/30 rounded-lg text-white"
                   />
                 </div>
 
                 <input
-                  type="tel"
+                  type="tel" name="phone"
                   placeholder="+91 98765 43210"
                   className="w-full px-4 py-3 bg-black border border-red-900/30 rounded-lg text-white"
                 />
 
                 <input
-                  type="text"
+                  type="text" name="subject"
                   placeholder="How can we help?"
                   className="w-full px-4 py-3 bg-black border border-red-900/30 rounded-lg text-white"
                 />
 
                 <textarea
-                  rows={6}
+                  rows={6} name="message"
                   placeholder="Tell us about your requirements..."
                   className="w-full px-4 py-3 bg-black border border-red-900/30 rounded-lg text-white resize-none"
                 />
@@ -117,9 +119,9 @@ export default function Contact() {
                 Visit Our Showroom
               </h3>
               </div> */}
-              
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14769.86926695801!2d70.799046!3d22.260281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb7f4441ea31%3A0x5859fab9f4414805!2sMS%20Spinning%20Services!5e0!3m2!1sen!2sin!4v1770537586535!5m2!1sen!2sin"
-                className="absolute top-0 -left-60 w-full h-full scale-150"></iframe>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14769.86926695801!2d70.799046!3d22.260281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959cb7f4441ea31%3A0x5859fab9f4414805!2sMS%20Spinning%20Services!5e0!3m2!1sen!2sin!4v1770537586535!5m2!1sen!2sin"
+              className="absolute top-0 -left-60 w-full h-full scale-150"></iframe>
           </div>
         </ScrollAnimatedSection>
 

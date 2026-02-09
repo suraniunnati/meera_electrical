@@ -11,7 +11,7 @@ export default function SingleProduct() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white p-10">
+    <div className=" bg-black text-white p-10">
       <Link
         to="/products"
         className="flex items-center gap-2 text-gray-400 mb-6"
@@ -20,7 +20,7 @@ export default function SingleProduct() {
       </Link>
 
     <div className="flex justify-center items-center flex-wrap gap-8 w-full py-10">
-     <div className="w-4/12 flex justify-center items-center h-full">
+     <div className="md:w-4/12 w-full flex justify-center items-center h-full">
          <img
         src={product.image}
         alt={product.name}
@@ -28,8 +28,8 @@ export default function SingleProduct() {
       />
      </div>
 
-    <div className="w-6/12">
-        <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
+    <div className="md:w-6/12 w-full">
+        <h1 className="md:text-3xl text-2xl font-bold mb-4">{product.name}</h1>
       <p className="text-gray-400 mb-6">{product.description}</p>
 
       <div className="space-y-3">
